@@ -98,7 +98,7 @@
     "generation": 3,
     "type": "Cheval",
     "vente": true,
-    "prix": 0,
+    "prix": 850,
     "disciplines": ["Polyvalent", "Travail de ferme"],
     "particularites": {
       "allure": null,
@@ -133,7 +133,7 @@
     "disciplines": ["Loisir"],
     "particularites": {
       "allure": null,
-      "mouvement": null,
+      "mouvement": "Assis + papillon",
       "magique": false
     },
     "stats": {
