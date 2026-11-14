@@ -3,6 +3,7 @@
     "id": "cheval_depart",
     "nom": "Cheval de départ",
     "generation": 3,
+    "type": "Cheval",
     "vente": false,
     "prix": 0,
     "disciplines": ["Loisir"],
@@ -32,6 +33,7 @@
     "id": "jorvikois_sang_chaud_3g",
     "nom": "Jorvikois sang chaud",
     "generation": 3,
+    "type": "Cheval",
     "vente": true,
     "prix": 750,
     "disciplines": ["Polyvalent", "Loisir"],
@@ -56,5 +58,35 @@
     ],
     "url_article_blog": "https://www.communautejorvikoise.com/blog/races-3/jorvikois-sang-chaud-57",
     "url_page_SSO": "https://www.starstable.com/fr/horses/breeds/jorvik-warmblood"
+  },
+  {
+    "id": "fjord_norvégien_3g",
+    "nom": "Fjord norvégien",
+    "generation": 3,
+    "type": "Cheval",
+    "vente": true,
+    "prix": 900,
+    "disciplines": ["Polyvalent", "Trait"],
+    "particularites": {
+      "allure": null,
+      "mouvement": null,
+      "magique": false
+    },
+    "stats": {
+      "puissance": 0,
+      "discipline": 0,
+      "rapidité": 0,
+      "endurance": 0,
+      "agilité": 0,
+      "total": 0
+    },
+    "lieux": [
+      {
+        "emplacement": "Valedale",
+        "niveau_min": 6
+      }
+    ],
+    "url_article_blog": "7",
+    "url_page_SSO": "https://www.starstable.com/fr/horses/breeds/norwegian-fjord-horse"
   }
 ]

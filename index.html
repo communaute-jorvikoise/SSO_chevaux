@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🐎 Répertoire chevaux SSO</title>
+    <title>Répertoire chevaux SSO</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -93,6 +93,7 @@
             font-weight: bold;
         }
         .badge-gen { background: #e8f4fd; color: #3498db; }
+        .badge-type { background: #f5eef8; color: #BC5ED7; }
         .badge-price { background: #fef5e7; color: #d35400; }
         .badge-stat { background: #e8f8f5; color: #16a085; }
         
@@ -131,7 +132,7 @@
 <body>
 
 <div class="container">
-    <h1>🐎 Suivi de Collection - Races SSO</h1>
+    <h1>🐎 Répertoire chevaux Star Stable Online</h1>
     
     <div class="top-bar">
         <div class="stats-box" id="global-stats">
@@ -225,6 +226,7 @@ function renderRaces(races, robes) {
                     </div>
                     <div class="badges-group">
                         <span class="badge badge-gen">Gen ${race.generation}</span>
+                        <span class="badge badge-type">${race.type || 'Inconnu'}</span>
                         <span class="badge badge-price">${race.prix ? race.prix + ' SC' : 'Gratuit'}</span>
                     </div>
                 </div>
