@@ -92,8 +92,8 @@
             font-size: 0.85em;
             font-weight: bold;
         }
-        .badge-gen { background: #e8f4fd; color: #3498db; }
-        .badge-type { background: #f5eef8; color: #BC5ED7; }
+        .badge-type { background: #e8f4fd; color: #3498db; }
+        .badge-gen { background: #f5eef8; color: #BC5ED7; }
         .badge-price { background: #fef5e7; color: #d35400; }
         .badge-stat { background: #e8f8f5; color: #16a085; }
         
@@ -225,8 +225,8 @@ function renderRaces(races, robes) {
                         <small style="color: #666;">Disciplines : ${disciplinesTexte}</small>
                     </div>
                     <div class="badges-group">
-                        <span class="badge badge-gen">Gen ${race.generation}</span>
                         <span class="badge badge-type">${race.type || 'Inconnu'}</span>
+                        <span class="badge badge-gen">Gen ${race.generation}</span>
                         <span class="badge badge-price">${race.prix ? race.prix + ' SC' : 'Gratuit'}</span>
                     </div>
                 </div>
