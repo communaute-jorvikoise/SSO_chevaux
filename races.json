@@ -153,5 +153,36 @@
     ],
     "url_article_blog": "https://www.communautejorvikoise.com/blog/races-3/nottsoren-66",
     "url_page_SSO": null
+  },
+  {
+    "id": "race",
+    "nom": "Nom",
+    "generation": 3,
+    "type": "Cheval",
+    "vente": false,
+    "prix": 0,
+    "disciplines": [""],
+    "particularites": {
+      "allure": null,
+      "mouvement": null,
+      "magique": false
+    },
+    "stats": {
+      "puissance": 0,
+      "discipline": 0,
+      "rapidité": 0,
+      "endurance": 0,
+      "agilité": 0,
+      "total": 0
+    },
+    "lieux": [
+      {
+        "emplacement": null,
+        "niveau_min": 1,
+        "reputation": null
+      }
+    ],
+    "url_article_blog": null,
+    "url_page_SSO": null
   }
 ]
