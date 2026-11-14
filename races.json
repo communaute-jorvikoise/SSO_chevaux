@@ -1,0 +1,58 @@
+[
+  {
+    "id": "cheval_depart",
+    "nom": "Cheval de départ",
+    "generation": 3,
+    "vente": false,
+    "prix": 0,
+    "disciplines": ["Loisir"],
+    "particularites": {
+      "allure": null,
+      "mouvement": null,
+      "magique": false
+    },
+    "stats": {
+      "puissance": 0,
+      "discipline": 0,
+      "rapidité": 0,
+      "endurance": 0,
+      "agilité": 0,
+      "total": 0
+    },
+    "lieux": [
+      {
+        "emplacement": null,
+        "niveau_min": 0
+      }
+    ],
+    "url_article_blog": "https://www.communautejorvikoise.com/blog/races-3/cheval-depart-61"
+  },
+  {
+    "id": "jorvikois_sang_chaud_3g",
+    "nom": "Jorvikois sang chaud",
+    "generation": 3,
+    "vente": true,
+    "prix": 750,
+    "disciplines": ["Polyvalent", "Loisir"],
+    "particularites": {
+      "allure": null,
+      "mouvement": null,
+      "magique": false
+    },
+    "stats": {
+      "puissance": 2,
+      "discipline": 2,
+      "rapidité": 0,
+      "endurance": 1,
+      "agilité": 2,
+      "total": 7
+    },
+    "lieux": [
+      {
+        "emplacement": "Village du Croissant de lune",
+        "niveau_min": 5
+      }
+    ],
+    "url_article_blog": "https://www.communautejorvikoise.com/blog/races-3/jorvikois-sang-chaud-57"
+  }
+]

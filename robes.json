@@ -1,0 +1,58 @@
+[
+  {
+    "id": "jsc_01",
+    "race_id": "jorvikois_sang_chaud_3g",
+    "robe": "Isabelle fumé cape tachetée",
+    "edition_limitee": false,
+    "achetable": false
+  },
+  {
+    "id": "jsc_02",
+    "race_id": "jorvikois_sang_chaud_3g",
+    "robe": "Rouan bleu",
+    "edition_limitee": false,
+    "achetable": false
+  },
+  {
+    "id": "jsc_03",
+    "race_id": "jorvikois_sang_chaud_3g",
+    "robe": "Alezan brûlé",
+    "edition_limitee": false,
+    "achetable": false
+  },
+  {
+    "id": "jsc_04",
+    "race_id": "jorvikois_sang_chaud_3g",
+    "robe": "Pie tobiano palomino",
+    "edition_limitee": false,
+    "achetable": false
+  },
+  {
+    "id": "jsc_05",
+    "race_id": "jorvikois_sang_chaud_3g",
+    "robe": "Gris foncé",
+    "edition_limitee": false,
+    "achetable": false
+  },
+{
+    "id": "jsc_06",
+    "race_id": "jorvikois_sang_chaud_3g",
+    "robe": "Pie tobiano bai",
+    "edition_limitee": false,
+    "achetable": false
+},
+{
+    "id": "jsc_07",
+    "race_id": "jorvikois_sang_chaud_3g",
+    "robe": "Bai sooty",
+    "edition_limitee": false,
+    "achetable": false
+},
+{
+    "id": "jsc_08",
+    "race_id": "jorvikois_sang_chaud_3g",
+    "robe": "Pie overo alezan",
+    "edition_limitee": false,
+    "achetable": false
+}
+]
