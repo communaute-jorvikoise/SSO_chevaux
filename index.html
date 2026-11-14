@@ -70,7 +70,7 @@
         }
         .race-title {
             margin: 0 0 5px 0;
-            color: #1abc9c;
+            color: #BC5ED7;
         }
         .links-container a {
             margin-right: 15px;
@@ -174,8 +174,8 @@ function renderRaces(races, robes) {
     const statsContainer = document.getElementById('global-stats');
     
     statsContainer.innerHTML = `
-        <div><strong>Total Races :</strong> ${races.length}</div>
-        <div><strong>Total Robes enregistrées :</strong> ${robes.length}</div>
+        <div><strong>Nombre de races :</strong> ${races.length}</div>
+        <div><strong>Nombre de robes :</strong> ${robes.length}</div>
     `;
 
     container.innerHTML = '';
@@ -198,12 +198,12 @@ function renderRaces(races, robes) {
             <span><strong>Rapidité :</strong> ${stats.rapidité ?? '-'}</span>
             <span><strong>Endurance :</strong> ${stats.endurance ?? '-'}</span>
             <span><strong>Agilité :</strong> ${stats.agilité ?? '-'}</span>
-            <span><strong>Total :</strong> ${stats.total ?? '-'}</span>
+            <span class="badge badge-stat">Total : ${stats.total ?? 'N/A'}</span>
         `;
 
         let linksHtml = `<div class="links-container">`;
         if (race.url_article_blog) {
-            linksHtml += `<a href="${race.url_article_blog}" target="_blank">📝 Article de blog Odoo</a>`;
+            linksHtml += `<a href="${race.url_article_blog}" target="_blank">📝 Mon article de blog</a>`;
         }
         if (race.url_page_SSO) {
             linksHtml += `<a href="${race.url_page_SSO}" target="_blank">🌐 Page officielle SSO</a>`;
@@ -220,8 +220,7 @@ function renderRaces(races, robes) {
                     </div>
                     <div class="badges-group">
                         <span class="badge badge-gen">Gen ${race.generation}</span>
-                        <span class="badge badge-price">${race.prix ? race.prix + ' SC' : 'Prix libre'}</span>
-                        <span class="badge badge-stat">Total stats : ${stats.total ?? 'N/C'}</span>
+                        <span class="badge badge-price">${race.prix ? race.prix + ' SC' : 'Gratuit'}</span>
                     </div>
                 </div>
                 
