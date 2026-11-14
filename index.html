@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi - Races et Robes Star Stable</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .stats-box {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            display: flex;
+            gap: 30px;
+            font-size: 1.1em;
+        }
+        .race-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .race-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .race-title {
+            margin: 0;
+            color: #1abc9c;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.95em;
+        }
+        th {
+            background-color: #fafbfc;
+            color: #666;
+        }
+        .badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+        .badge-gen { background: #e8f4fd; color: #3498db; }
+        .badge-price { background: #fef5e7; color: #f39c12; }
+        .badge-stat { background: #e8f8f5; color: #16a085; }
+        .owned { color: #27ae60; font-weight: bold; }
+        .missing { color: #e74c3c; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🐎 Suivi de Collection - Races SSO</h1>
+    
+    <div class="stats-box" id="global-stats">
+        <span>Chargement des statistiques...</span>
+    </div>
+
+    <div id="races-container">
+        <!-- Les données injectées par JavaScript apparaîtront ici -->
+    </div>
+</div>
+
+<script>
+async function loadData() {
+    try {
+        // Chargement simultané de tes deux fichiers JSON situés dans le même répertoire
+        const [racesRes, robesRes] = await Promise.all([
+            fetch('races.json'),
+            fetch('robes.json')
+        ]);
+        
+        const races = await racesRes.json();
+        const robes = await robesRes.json();
+
+        const container = document.getElementById('races-container');
+        const statsContainer = document.getElementById('global-stats');
+        
+        let totalRobes = robes.length;
+        // Si tu ajoutes un statut "possede: true/false" dans ton robes.json plus tard, tu pourras le compter ici
+        
+        statsContainer.innerHTML = `
+            <div><strong>Total Races :</strong> ${races.length}</div>
+            <div><strong>Total Robes suivies :</strong> ${totalRobes}</div>
+        `;
+
+        container.innerHTML = '';
+
+        // Pour chaque race, on cherche ses robes associées
+        races.forEach(race => {
+            const robesDeLaRace = robes.filter(r => r.race_id === race.id);
+            
+            let lieuxTexte = race.lieux ? race.lieux.map(l => `${l.emplacement} (Niv. ${l.niveau_min})`).join(', ') : 'Non renseigné';
+            let disciplinesTexte = race.disciplines ? race.disciplines.join(', ') : 'Aucune';
+
+            let htmlCard = `
+                <div class="race-card">
+                    <div class="race-header">
+                        <div>
+                            <h2 class="race-title">${race.nom}</h2>
+                            <small>Disciplines : ${disciplinesTexte} | Prix base : ${race.prix} SC</small>
+                        </div>
+                        <div>
+                            <span class="badge badge-gen">Gen ${race.generation}</span>
+                            <span class="badge badge-stat">Stats Total : ${race.stats ? race.stats.total : 'N/C'}</span>
+                        </div>
+                    </div>
+                    <p><strong>Lieux :</strong> ${lieuxTexte}</p>
+            `;
+
+            if (robesDeLaRace.length > 0) {
+                htmlCard += `
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Robe</th>
+                                <th>Édition Limitée</th>
+                                <th>Achetable</th>
+                                <th>Lien Blog / Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                `;
+                robesDeLaRace.forEach(robe => {
+                    htmlCard += `
+                        <tr>
+                            <td>${robe.robe}</td>
+                            <td>${robe.edition_limitee ? '✨ Oui' : 'Non'}</td>
+                            <td>${robe.achetable ? '✅ Oui' : '❌ Non'}</td>
+                            <td><a href="${race.url_article_blog}" target="_blank">Voir l'article</a></td>
+                        </tr>
+                    `;
+                });
+                htmlCard += `</tbody></table>`;
+            } else {
+                htmlCard += `<p><em>Aucune robe enregistrée pour le moment dans robes.json.</em></p>`;
+            }
+
+            htmlCard += `</div>`;
+            container.innerHTML += htmlCard;
+        });
+
+    } catch (error) {
+        console.error("Erreur lors du chargement des JSON :", error);
+        document.getElementById('races-container').innerHTML = `<p style="color: red;">Erreur : Impossible de charger les fichiers <code>races.json</code> ou <code>robes.json</code>. Vérifie qu'ils sont bien présents à la racine du dépôt.</p>`;
+    }
+}
+
+loadData();
+</script>
+
+</body>
+</html>
