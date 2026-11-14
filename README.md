@@ -10,9 +10,9 @@ Pour les disciplines, garder les termes autour de 6 à 8 grandes catégories fix
 - Dressage
 - Saut d'obstacles (CSO)
 - Western
-- Loisir / Randonnée
-- Trait / Travail (pour les chevaux lourds, attelage, ferme)
+- Loisir
 - Course / Endurance
+- Travail de ferme
 - Polyvalent (quand la race excelle un peu partout)
 
 
