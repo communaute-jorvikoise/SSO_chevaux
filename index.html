@@ -150,6 +150,11 @@
 <script>
 let allRacesData = [];
 let allRobesData = [];
+// Gestion propre de l'affichage des lieux ou de "Pas en vente"
+    let lieuxTexte = 'Pas en vente';
+    if (race.lieux && Array.isArray(race.lieux) && race.lieux.length > 0) {
+        lieuxTexte = race.lieux.map(l => `${l.emplacement} (Niv. ${l.niveau_min})`).join(', ');
+    }
 
 async function loadData() {
     try {
