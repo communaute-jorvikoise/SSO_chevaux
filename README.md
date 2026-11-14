@@ -1,4 +1,4 @@
-# Répertoire des chevaux de Star Stable Online.
+# Répertoire des chevaux de Star Stable Online
 
 Répertoire complet des races et des robes des chevaux de Star Stable Online. L'objectif est de pouvoir m'en servir sur le site pour faire un comparateur par « Particularité » qui couvre trois grands profils de joueurs et joueuses de SSO sans devenir un catalogue :
 - Les compétitrices : tri par stats .
@@ -19,7 +19,9 @@ Pour les disciplines, garder les termes autour de 6 à 8 grandes catégories fix
 ## index.html
 
 Ce fichier est conçu comme un tableau de bord de suivi personnel. Il va chercher dynamiquement les fichiers races.json et robes.json, fait le lien entre les deux, et affiche :
-- Une vue globale de ma progression (combien de robes tu possèdes par rapport au total).
-- Un tableau de suivi par race avec le détail des robes, des prix, des stats, et un indicateur visuel pour savoir si tu as acquis la robe ou non.
+- Une vue globale des informations receuillies.
+- Un tableau de suivi par race avec le détail des robes, des prix, des stats, en vente ou non, etc.
 
 Il est pensé en HTML/CSS simple (avec un design moderne et épuré) et intègre un petit script JavaScript intégré pour que tu puisses l'ouvrir directement depuis ton navigateur ou l'héberger en local/GitHub Pages sans configuration lourde.
+
+Visiter le site (depuis GitHub) : https://communaute-jorvikoise.github.io/SSO_chevaux/

@@ -25,7 +25,8 @@
         "niveau_min": 0
       }
     ],
-    "url_article_blog": "https://www.communautejorvikoise.com/blog/races-3/cheval-depart-61"
+    "url_article_blog": "https://www.communautejorvikoise.com/blog/races-3/cheval-depart-61",
+    "url_page_SSO": ""
   },
   {
     "id": "jorvikois_sang_chaud_3g",
@@ -53,6 +54,7 @@
         "niveau_min": 5
       }
     ],
-    "url_article_blog": "https://www.communautejorvikoise.com/blog/races-3/jorvikois-sang-chaud-57"
+    "url_article_blog": "https://www.communautejorvikoise.com/blog/races-3/jorvikois-sang-chaud-57",
+    "url_page_SSO": "https://www.starstable.com/fr/horses/breeds/jorvik-warmblood"
   }
 ]
