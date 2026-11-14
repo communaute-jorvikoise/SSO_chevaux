@@ -189,10 +189,19 @@ function renderRaces(races, robes) {
     races.forEach(race => {
         const robesDeLaRace = robes.filter(r => r.race_id === race.id);
         
-        // Gestion propre de l'affichage des lieux ou de "Pas en vente"
-        let lieuxTexte = '<span style="color: #e74c3c; font-weight: bold;">Pas en vente</span>';
-        if (race.lieux && Array.isArray(race.lieux) && race.lieux.length > 0) {
-            lieuxTexte = race.lieux.map(l => `${l.emplacement} (Niv. ${l.niveau_min} et Réputation: ${l.reputation ?? 'Aucun'})`).join(', ');
+        // Gestion des lieux ou du message "Plus en vente" selon le champ "vente"
+        let lieuxTexte = '';
+        if (race.vente === false) {
+            lieuxTexte = '<span style="color: #e74c3c; font-weight: bold;">Cette race n\'est plus en vente.</span>';
+        } else {
+            if (race.lieux && Array.isArray(race.lieux) && race.lieux.length > 0) {
+                lieuxTexte = race.lieux.map(l => {
+                    let rep = l.reputation ? ` et Réputation ${l.reputation}` : '';
+                    return `${l.emplacement} (Niv. ${l.niveau_min}${rep})`;
+                }).join(', ');
+            } else {
+                lieuxTexte = 'Non renseigné';
+            }
         }
 
         let disciplinesTexte = race.disciplines ? race.disciplines.join(', ') : 'Aucune';
@@ -225,8 +234,8 @@ function renderRaces(races, robes) {
                         <small style="color: #666;">Disciplines : ${disciplinesTexte}</small>
                     </div>
                     <div class="badges-group">
-                        <span class="badge badge-type">${race.type || 'Inconnu'}</span>
                         <span class="badge badge-gen">Gen ${race.generation}</span>
+                        ${race.type ? `<span class="badge badge-type">${race.type}</span>` : ''}
                         <span class="badge badge-price">${race.prix ? race.prix + ' SC' : 'Gratuit'}</span>
                     </div>
                 </div>
@@ -247,6 +256,7 @@ function renderRaces(races, robes) {
                             <th>Nom de la robe</th>
                             <th>Édition Limitée</th>
                             <th>Achetable</th>
+                            <th>Appli SSO Horses</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -258,6 +268,7 @@ function renderRaces(races, robes) {
                         <td><strong>${robe.robe}</strong></td>
                         <td>${robe.edition_limitee ? '✨ Oui' : 'Non'}</td>
                         <td>${robe.achetable ? '✅ Oui' : '❌ Non'}</td>
+                        <td>${robe.appli_SSO_Horses ? '📱 Oui' : '❌ Non'}</td>
                     </tr>
                 `;
             });
