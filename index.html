@@ -192,7 +192,7 @@ function renderRaces(races, robes) {
         // Gestion propre de l'affichage des lieux ou de "Pas en vente"
         let lieuxTexte = '<span style="color: #e74c3c; font-weight: bold;">Pas en vente</span>';
         if (race.lieux && Array.isArray(race.lieux) && race.lieux.length > 0) {
-            lieuxTexte = race.lieux.map(l => `${l.emplacement} (Niv. ${l.niveau_min})`).join(', ');
+            lieuxTexte = race.lieux.map(l => `${l.emplacement} (Niv. ${l.niveau_min} et Réputation: ${l.reputation ?? 'Aucun'})`).join(', ');
         }
 
         let disciplinesTexte = race.disciplines ? race.disciplines.join(', ') : 'Aucune';
