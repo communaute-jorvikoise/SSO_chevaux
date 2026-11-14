@@ -4,105 +4,105 @@
     "race_id": "cheval_depart",
     "robe": "Pie bai",
     "edition_limitee": false,
-    "achetable": true
+    "achetable": false
   },
   {
     "id": "depart_02",
     "race_id": "cheval_depart",
     "robe": "Isabelle pie",
     "edition_limitee": false,
-    "achetable": true
+    "achetable": false
   },
   {
     "id": "depart_03",
     "race_id": "cheval_depart",
     "robe": "Gris clair",
     "edition_limitee": false,
-    "achetable": true
+    "achetable": false
   },
   {
     "id": "depart_04",
     "race_id": "cheval_depart",
     "robe": "Gris pommelé",
     "edition_limitee": false,
-    "achetable": true
+    "achetable": false
   },
   {
     "id": "depart_05",
     "race_id": "cheval_depart",
     "robe": "Bai brun foncé",
     "edition_limitee": false,
-    "achetable": true
+    "achetable": false
   },
   {
     "id": "depart_06",
     "race_id": "cheval_depart",
     "robe": "Alezan brûlé avec des balzanes",
     "edition_limitee": false,
-    "achetable": true
+    "achetable": false
   },
   {
     "id": "depart_07",
     "race_id": "cheval_depart",
     "robe": "Bai brun avec une pelote et des balzanes",
     "edition_limitee": false,
-    "achetable": true
+    "achetable": false
   },
   {
     "id": "depart_08",
     "race_id": "cheval_depart",
     "robe": "Alezan avec une pelote et des petites balzanes",
     "edition_limitee": false,
-    "achetable": true
+    "achetable": false
   },
   {
     "id": "depart_09",
     "race_id": "cheval_depart",
     "robe": "Bai clair avec une entête",
     "edition_limitee": false,
-    "achetable": true
+    "achetable": false
   },
   {
     "id": "depart_10",
     "race_id": "cheval_depart",
     "robe": "Alezan clair avec une liste et des balzanes",
     "edition_limitee": false,
-    "achetable": true
+    "achetable": false
   },
   {
     "id": "depart_11",
     "race_id": "cheval_depart",
     "robe": "Bai",
     "edition_limitee": false,
-    "achetable": true
+    "achetable": false
   },
   {
     "id": "depart_12",
     "race_id": "cheval_depart",
     "robe": "Alezan rabicano",
     "edition_limitee": false,
-    "achetable": true
+    "achetable": false
   },
   {
     "id": "depart_13",
     "race_id": "cheval_depart",
     "robe": "Isabelle doré avec liste et grandes balzanes",
     "edition_limitee": false,
-    "achetable": true
+    "achetable": false
   },
   {
     "id": "depart_14",
     "race_id": "cheval_depart",
     "robe": "Bai pommelé avec une liste",
     "edition_limitee": false,
-    "achetable": true
+    "achetable": false
   },
   {
     "id": "depart_15",
     "race_id": "cheval_depart",
     "robe": "Bai clair",
     "edition_limitee": false,
-    "achetable": true
+    "achetable": false
   },
   {
     "id": "jsc_01",

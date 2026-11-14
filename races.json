@@ -27,7 +27,7 @@
       }
     ],
     "url_article_blog": "https://www.communautejorvikoise.com/blog/races-3/cheval-depart-61",
-    "url_page_SSO": ""
+    "url_page_SSO": null
   },
   {
     "id": "jorvikois_sang_chaud_3g",
@@ -86,7 +86,7 @@
         "niveau_min": 6
       }
     ],
-    "url_article_blog": "7",
+    "url_article_blog": null,
     "url_page_SSO": "https://www.starstable.com/fr/horses/breeds/norwegian-fjord-horse"
   }
 ]
