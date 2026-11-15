@@ -242,7 +242,7 @@
 {
     "id": "fjord_norvégien_01",
     "race_id": "fjord_norvégien_3g",
-    "robe": "",
+    "robe": "Bai dun pangaré",
     "edition_limitee": false,
     "achetable": true,
     "appli_SSO_Horses": false
@@ -250,7 +250,7 @@
 {
     "id": "fjord_norvégien_02",
     "race_id": "fjord_norvégien_3g",
-    "robe": "",
+    "robe": "Bai dun pangaré clair",
     "edition_limitee": false,
     "achetable": true,
     "appli_SSO_Horses": false
@@ -258,7 +258,7 @@
 {
     "id": "fjord_norvégien_03",
     "race_id": "fjord_norvégien_3g",
-    "robe": "",
+    "robe": "Alezan dun pangaré",
     "edition_limitee": false,
     "achetable": true,
     "appli_SSO_Horses": false
@@ -266,7 +266,7 @@
 {
     "id": "fjord_norvégien_04",
     "race_id": "fjord_norvégien_3g",
-    "robe": "",
+    "robe": "Noir dun",
     "edition_limitee": false,
     "achetable": true,
     "appli_SSO_Horses": false
@@ -274,7 +274,7 @@
 {
     "id": "fjord_norvégien_05",
     "race_id": "fjord_norvégien_3g",
-    "robe": "",
+    "robe": "Isabelle dun",
     "edition_limitee": false,
     "achetable": true,
     "appli_SSO_Horses": false
@@ -282,7 +282,7 @@
 {
     "id": "fjord_norvégien_06",
     "race_id": "fjord_norvégien_3g",
-    "robe": "",
+    "robe": "Palomino dun",
     "edition_limitee": false,
     "achetable": true,
     "appli_SSO_Horses": false
@@ -290,7 +290,7 @@
 {
     "id": "fjord_norvégien_07",
     "race_id": "fjord_norvégien_3g",
-    "robe": "",
+    "robe": "Cremello dun",
     "edition_limitee": false,
     "achetable": true,
     "appli_SSO_Horses": false
