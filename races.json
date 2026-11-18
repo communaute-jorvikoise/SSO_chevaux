@@ -98,7 +98,7 @@
     "generation": 3,
     "type": "Cheval",
     "vente": true,
-    "prix": 850,
+    "prix": 595,
     "disciplines": ["Polyvalent", "Travail de ferme"],
     "particularites": {
       "allure": null,
@@ -115,7 +115,7 @@
     },
     "lieux": [
       {
-        "emplacement": "Valedale",
+        "emplacement": "Grange vintage de Marley",
         "niveau_min": 6,
         "reputation": null
       }
