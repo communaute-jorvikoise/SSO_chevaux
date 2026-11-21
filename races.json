@@ -23,7 +23,7 @@
     "lieux": [
       {
         "emplacement": null,
-        "niveau_min": 1,
+        "niveau_min": 0,
         "reputation": null
       }
     ],
