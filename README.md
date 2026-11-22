@@ -7,13 +7,14 @@ Répertoire complet des races et des robes des chevaux de Star Stable Online. L'
 
 
 Pour les disciplines, garder les termes autour de 6 à 8 grandes catégories fixes :
-- Dressage
-- Saut d'obstacles (CSO)
-- Western
-- Loisir
-- Course / Endurance
-- Travail de ferme
-- Polyvalent (quand la race excelle un peu partout)
+1. Dressage
+2. Saut d'obstacles
+3. Cross-country
+4. Western
+5. Loisir
+6. Course / Endurance
+7. Travail de ferme
+8. Polyvalent (quand la race excelle un peu partout)
 
 
 ## index.html

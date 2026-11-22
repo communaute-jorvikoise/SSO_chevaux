@@ -155,11 +155,42 @@
     "url_page_SSO": null
   },
   {
+    "id": "hanovrien_3g",
+    "nom": "Hanovrien",
+    "generation": 3,
+    "type": "Cheval",
+    "vente": true,
+    "prix": 950,
+    "disciplines": ["Polyvalent", "Compétition", "Saut d'obstacles"],
+    "particularites": {
+      "allure": null,
+      "mouvement": "Saut de puce et Ruade",
+      "magique": false
+    },
+    "stats": {
+      "puissance": 1,
+      "discipline": 2,
+      "rapidité": 0,
+      "endurance": 1,
+      "agilité": 3,
+      "total": 7
+    },
+    "lieux": [
+      {
+        "emplacement": "Les champs Jarla",
+        "niveau_min": 7,
+        "reputation": null
+      }
+    ],
+    "url_article_blog": null,
+    "url_page_SSO": null
+  },
+  {
     "id": "race",
     "nom": "Nom",
     "generation": 3,
     "type": "Cheval",
-    "vente": false,
+    "vente": true,
     "prix": 0,
     "disciplines": [""],
     "particularites": {
